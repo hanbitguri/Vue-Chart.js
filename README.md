@@ -29,7 +29,9 @@ template의 canvas element 를 **dom selector** 혹은 **ref를 이용**해서 �
 
 ```
 const chartOption = {
+
             type: chartType,
+
             data: {
                 labels: 축에 나타낼 데이터 제목[],
                 datasets: [
@@ -39,10 +41,10 @@ const chartOption = {
                     },
                 ],
             },
-            //option?
+
             options: {
                 // ---차트 전역 설정---
-                color: "red", // legend 색상
+                color: "red", // legend 색상변경
                 indexAxis: "y", // 축 방향 변경
                 maintainAspectRatio: false, // 비율 고정 해제
                 scales: {
@@ -55,6 +57,7 @@ const chartOption = {
                         },
                     },
                 },
+
                 // ---차트 타입 별 설정---
                 elements: {
                     bar: {
@@ -63,6 +66,8 @@ const chartOption = {
                         backgroundColor: "#000",
                     },
                 },
+                // ---차트 타입 별 설정---
+
                // ---툴팁 , 범례 설정---
                 plugins: {
                     // 호버 시 뜨는 툴팁 스타일 변경
@@ -76,6 +81,8 @@ const chartOption = {
                         maxHeight: 102,
                     },
                 },
+               // ---툴팁 , 범례 설정---
+
             },
         }
 ```
